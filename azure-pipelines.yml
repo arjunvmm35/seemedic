@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '55e00244-8598-49e2-9a36-411b32a888bf'
   imageRepository: 'arjunvmmseemedic'
   containerRegistry: 'aacrseemedic.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/seemedic'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'aacrseemedica1f7-auth'
 
