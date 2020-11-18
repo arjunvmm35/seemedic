@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: arjunvmmseemedic 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: arjunvmmseemedic
+  template:
+    metadata:
+      labels:
+        app: arjunvmmseemedic 
+    spec:
+      containers:
+        - name: arjunvmmseemedic 
+          image: aacrseemedic.azurecr.io/arjunvmmseemedic
+          ports:
+          - containerPort: 80
