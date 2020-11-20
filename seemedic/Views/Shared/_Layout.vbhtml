@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - SeeMedic</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -86,20 +86,19 @@
             </div>
             
             <div class="mynav_navbar">
-                <a @Html.ActionLink("Home", "Index", "Home") </a>
-                <a @Html.ActionLink("About", "About", "Home") </a>
-                <a @Html.ActionLink("Contact", "Contact", "Home") </a>
-                <a @Html.ActionLink("Covid19", "Covid19", "Home") </a>
-                <a @Html.ActionLink("Fitness", "Fitness", "Home") </a>
+                <a> @Html.ActionLink("Home", "Index", "Home") </a>
+                <a> @Html.ActionLink("About", "About", "Home") </a>
+                <a> @Html.ActionLink("Contact", "Contact", "Home") </a>
+                <a> @Html.ActionLink("Fitness", "Fitness", "Home") </a>
                 <div class="mynav_dropdown">
                     <button class="mynav_dropbtn">
                         Covid19
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="mynav_dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a> @Html.ActionLink("How it spreads?", "Howitspreads", "Home") </a>
+                        <a> @Html.ActionLink("Symptoms", "Symptoms", "Home") </a>
+                        <a> @Html.ActionLink("FAQ", "FAQ", "Home") </a>
                     </div>
                 </div>
                 <div class="mynav_dropdown">
@@ -108,9 +107,20 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="mynav_dropdown-content">
-                        <a @Html.ActionLink("Fitness", "Fitness", "Home") </a>
+                        <a> @Html.ActionLink("Fitness", "Fitness", "Home") </a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="mynav_dropdown">
+                    <button class="mynav_dropbtn">
+                        Cancer
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="mynav_dropdown-content">
+                        <a> @Html.ActionLink("Overview", "CancerOverview", "Home") </a>
+                        <a> @Html.ActionLink("Prevention", "CancerPrevention", "Home") </a>
+                        <a> @Html.ActionLink("Management", "CancerManagement", "Home") </a>
                     </div>
                 </div>
             </div>
@@ -120,7 +130,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - SeeMedic</p>
         </footer>
     </div>
 

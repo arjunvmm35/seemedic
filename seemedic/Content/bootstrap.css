@@ -5036,8 +5036,9 @@ a.badge:focus {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    //background-color: #337ab7;
     background-image: url('Image/health_hand.jpg');
+    background-size: 100%;
+    
 }
 .jumbotron h1,
 .jumbotron .h1 {

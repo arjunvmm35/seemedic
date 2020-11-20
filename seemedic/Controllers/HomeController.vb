@@ -16,13 +16,38 @@
 
         Return View()
     End Function
-    Function Covid19() As ActionResult
-        ViewData("Message") = "Covid-19 Outbreak in India"
+    Function Howitspreads() As ActionResult
+        ViewData("Message") = "How it spreads?"
 
         Return View()
     End Function
     Function Fitness() As ActionResult
         ViewData("Message") = "Fitness"
+
+        Return View()
+    End Function
+    Function Symptoms() As ActionResult
+        ViewData("Message") = "Symptoms"
+
+        Return View()
+    End Function
+    Function FAQ() As ActionResult
+        ViewData("Message") = "FAQ"
+
+        Return View()
+    End Function
+    Function CancerOverview() As ActionResult
+        ViewData("Message") = "Cancer"
+
+        Return View()
+    End Function
+    Function CancerPrevention() As ActionResult
+        ViewData("Message") = "Prevention"
+
+        Return View()
+    End Function
+    Function CancerManagement() As ActionResult
+        ViewData("Message") = "Management"
 
         Return View()
     End Function
